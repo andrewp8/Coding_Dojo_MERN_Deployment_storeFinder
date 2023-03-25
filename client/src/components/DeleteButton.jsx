@@ -5,7 +5,7 @@ import DeleteForeverTwoToneIcon from "@mui/icons-material/DeleteForeverTwoTone";
 const DeleteButton = ({ delId, successCallback }) => {
 	const handleDelete = () => {
 		axios
-			.delete(`http://localhost:8080/${delId}`)
+			.delete(`http://localhost:8080/api/stores/${delId}`)
 			.then((res) => (console.log(res.data), successCallback()))
 			.catch((err) => console.log(err));
 	};

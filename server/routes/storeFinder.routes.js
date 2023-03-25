@@ -5,5 +5,5 @@ module.exports = (app) => {
   app.post('/api/stores/add', StoreFinderController.create);
   app.get('/api/stores/:id', StoreFinderController.getOne);
   app.put('/api/stores/edit/:id', StoreFinderController.update);
-  app.delete('/:id', StoreFinderController.delete)
+  app.delete('/api/stores/:id', StoreFinderController.delete)
 };
