@@ -43,6 +43,13 @@
 }
 
 /* ======== NAVBAR ======== */
+#ap {
+	position: relative;
+	left: 660px;
+	top: -30px;
+	text-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+}
+
 .navBar {
 	border-radius: 25px 25px 0 0;
 	height: 80px;

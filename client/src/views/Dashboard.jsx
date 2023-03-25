@@ -20,6 +20,7 @@ const Dashboard = () => {
 	return (
 		<div>
 			<Navbar />
+			<p id="ap">Andrew Pham</p>
 			<p className="sub_header">Find stores in your area</p>
 			<table>
 				<thead>
