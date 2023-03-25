@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Mono", monospace;
+	color: rgba(0, 0, 0, 0.907);
+}
+
+.App {
+	margin: 5% auto;
+	width: 800px;
+	min-height: 600px;
+	border-radius: 25px;
+	border: 2px solid rgba(255, 253, 253, 0.173);
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+	/* background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+	/* background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+	background: linear-gradient(
+		300deg,
+		#f79256,
+		#fbd1a2,
+		#7dcfb6,
+		#00b2ca,
+		#1d4e89
+	);
+	background-size: 300% 300%;
+	animation: tanjiro-theme 15s ease infinite;
+}
+
+@keyframes tanjiro-theme {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.App a {
+	text-decoration: none;
+}
+
+/* ======== NAVBAR ======== */
+.navBar {
+	border-radius: 25px 25px 0 0;
+	height: 80px;
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.545);
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	border-bottom: 2px solid rgba(255, 253, 253, 0.173);
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+}
+
+.navBar img {
+	margin-left: 2.5%;
+	width: 8%;
+	padding: 0.5%;
+	border: 2px solid rgba(0, 0, 0, 0.852);
+	border-radius: 50%;
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(208, 208, 208, 0.796);
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+}
+.navBar h1 {
+	position: relative;
+	top: 35px;
+	left: 110px;
+	text-shadow: 2px 5px 8px rgba(128, 128, 128, 0.729);
+}
+
+.sub_header {
+	position: relative;
+	top: 5px;
+	left: 110px;
+	margin-bottom: 2%;
+}
+
+/* ======== BUTTON ======== */
+button {
+	margin: 20px;
+	display: flex;
+}
+
+.home-btn {
+	top: -82px;
+	right: -630px;
+}
+
+.custom-btn {
+	display: flex;
+	width: 130px;
+	height: 40px;
+	color: lightgrey;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.btn-16 {
+	border: none;
+	color: #000;
+}
+
+.btn-16:after,
+input:after {
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+		7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+	transition: all 0.3s ease;
+}
+
+.btn-16:hover,
+input:hover {
+	color: #000;
+}
+
+.btn-16:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.btn-16:active {
+	top: 2px;
+}
+
+.home-btn:active {
+	top: -78px;
+}
+/* ======== DASHBOARD ======== */
+
+table,
+.displayStore,
+.addStore,
+.updateStore {
+	min-height: 300px;
+	margin: 0 auto;
+	padding: 15px;
+	width: 70%;
+	border-radius: 10px;
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(255, 255, 255, 0.545);
+	/* border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 2px solid rgba(255, 253, 253, 0.173); */
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+	text-align: center;
+	border-spacing: 0;
+	text-transform: capitalize;
+}
+
+thead {
+	border-radius: 10px 10px 0 0;
+	box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.133);
+	height: 35px;
+}
+
+tr {
+	height: 60px;
+	padding: 0 20px;
+}
+
+.storeLink:hover {
+	transform: scale(1.05);
+	transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.storeLink a:hover {
+	color: #9a373a;
+}
+
+td p {
+	margin: 0 auto;
+	width: 20px;
+	background-color: #00000051;
+	color: white;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.435);
+}
+
+td {
+	width: 25%;
+}
+
+.addBtn {
+	top: 15px;
+	left: 610px;
+	margin-bottom: 5%;
+}
+
+/* ======== DISPLAY ONE STORE ======== */
+.displayStore {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.displayStore img {
+	width: 100%;
+}
+
+.displayStore_headers {
+	padding: 5% 5% 0 5%;
+}
+.displayStore p {
+	padding: 5% 5% 0 5%;
+}
+
+.edit-btn {
+	left: 370px;
+}
+
+/* ======== STORE FORM ======== */
+
+.inputName *,
+.inputNum *,
+.inputStatus *,
+.inputName,
+.inputNum,
+.inputStatus {
+	margin: 2%;
+}
+
+/* ======== UPDATE STORE ======== */
+.updateStore {
+	margin-bottom: 5%;
+}
